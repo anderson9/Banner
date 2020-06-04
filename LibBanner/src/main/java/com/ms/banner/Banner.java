@@ -391,7 +391,7 @@ public class Banner extends FrameLayout implements ViewPager.OnPageChangeListene
         indicatorInside.removeAllViews();
         for (int i = 0; i < count; i++) {
             ImageView imageView = new ImageView(context);
-            imageView.setScaleType(ScaleType.CENTER_CROP);
+            imageView.setScaleType(ScaleType.CENTER_INSIDE);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(mIndicatorWidth, mIndicatorHeight);
             params.leftMargin = mIndicatorPadding;
             params.rightMargin = mIndicatorPadding;
